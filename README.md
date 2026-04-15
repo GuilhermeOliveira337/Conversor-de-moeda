@@ -83,5 +83,5 @@ Durante esse projeto, aprendi:
 <h2>👨‍💻 Autor</h2>
 
 <p>
-Desenvolvido por você 🚀
+Desenvolvido por Guilherme Oliveira
 </p>
