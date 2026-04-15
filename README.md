@@ -76,7 +76,7 @@ Durante esse projeto, aprendi:
 
 <h2>📌 Status</h2>
 
-<p>🚧 Projeto em evolução — melhorias futuras já planejadas.</p>
+<p>🚧 Projeto Finalizado
 
 <hr>
 
