@@ -1,87 +1,43 @@
-<h1 align="center">💱 Conversor de Moedas</h1>
+# Conversor de Moedas
 
-<p align="center">
-  Um projeto simples e funcional de conversão de moedas, desenvolvido para praticar JavaScript na prática.
-</p>
+Converte um valor em Real para Dólar, Euro, Libra ou Bitcoin. Foi o meu primeiro projeto em JavaScript de verdade — o ponto em que a linguagem deixou de ser sintaxe e virou ferramenta.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/status-finalizado-purple">
-  <img src="https://img.shields.io/badge/feito%20com-JavaScript-yellow">
-  <img src="https://img.shields.io/badge/layout-Figma-blue">
-</p>
+**[▶ Ver no ar](https://guilhermeoliveira337.github.io/Conversor-de-moeda/)**
 
-<hr>
+![Preview do conversor](./preview.png)
 
-<h2>🚀 Sobre o Projeto</h2>
+## O que faz
 
-<p>
-Este projeto é um conversor de moedas que permite transformar valores entre diferentes moedas de forma rápida e prática.
-Foi desenvolvido como meu primeiro contato real com JavaScript, focando em manipulação do DOM e lógica de programação.
-</p>
+- Converte **de Real para quatro moedas**: Dólar, Euro, Libra e Bitcoin
+- Troca **bandeira e nome da moeda** na hora em que a seleção muda, sem recarregar a página
+- Formata cada resultado **no padrão do país de destino**, com `Intl.NumberFormat` — o dólar sai `US$ 1,234.56`, o euro sai `1.234,56 €` e o real sai `R$ 1.234,56`
+- Recalcula automaticamente ao trocar de moeda, sem precisar clicar de novo em Converter
 
-<ul>
-  <li>💰 Conversão entre moedas</li>
-  <li>⚡ Interface simples e rápida</li>
-  <li>🎨 Design baseado em protótipo do Figma</li>
-</ul>
+## Limitação conhecida
 
-<hr>
+**As cotações estão fixas no código**, não vêm de uma API. Isso foi deliberado: o objetivo aqui era manipulação de DOM e eventos, não integração. Os valores estão desatualizados e o projeto não serve para conversão real.
 
-<h2>🛠️ Tecnologias Utilizadas</h2>
+O próximo passo natural seria trocar as constantes por uma chamada a uma API de câmbio e tratar os quatro estados da requisição — que é exatamente o que fui fazer depois no [Vitrine](https://github.com/GuilhermeOliveira337/vitrine-react).
 
-<ul>
-  <li>HTML5</li>
-  <li>CSS3</li>
-  <li>JavaScript (Vanilla)</li>
-  <li>Figma (para design e layout)</li>
-</ul>
+## O que eu aprendi aqui
 
-<hr>
+Foi onde caíram as fichas de manipulação de DOM: selecionar elemento, escutar evento, ler o valor de um input, calcular e escrever o resultado de volta na tela. Parece pouco hoje; na época era a diferença entre saber a sintaxe do JavaScript e conseguir fazer alguma coisa acontecer com ela.
 
-<h2>📦 Como Rodar o Projeto</h2>
+Também foi a primeira vez que segui um layout do Figma em vez de inventar o design enquanto codava — a diferença no resultado final foi grande o bastante para virar método.
 
-<pre>
-# Clone o repositório
-git clone https://github.com/seu-usuario/seu-repo.git
+## Tecnologias
 
-# Acesse a pasta
-cd seu-repo
+`HTML5` · `CSS3` · `JavaScript (Vanilla)` · `Intl.NumberFormat` · `Figma`
 
-# Abra o index.html no navegador
-</pre>
+## Rodando localmente
 
-<hr>
+```bash
+git clone https://github.com/GuilhermeOliveira337/Conversor-de-moeda.git
+cd Conversor-de-moeda
+```
 
-<h2>📸 Preview</h2>
+Abra o `index.html` no navegador — não há dependências nem build.
 
-<p align="center">
-  <img src="preview.png.png" alt="preview do projeto" width="400">
-</p>
+---
 
-<hr>
-
-<h2>📚 Aprendizados</h2>
-
-<p>
-Durante esse projeto, aprendi:
-</p>
-
-<ul>
-  <li>Manipulação do DOM com JavaScript</li>
-  <li>Eventos e interações com o usuário</li>
-  <li>Organização de código front-end</li>
-</ul>
-
-<hr>
-
-<h2>📌 Status</h2>
-
-<p>🚧 Projeto Finalizado
-
-<hr>
-
-<h2>👨‍💻 Autor</h2>
-
-<p>
-Desenvolvido por Guilherme Oliveira
-</p>
+Desenvolvido por **Guilherme Oliveira** · [LinkedIn](https://www.linkedin.com/in/guilherme-oliveira-frontend)
